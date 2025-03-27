@@ -2,7 +2,7 @@ import { Server } from "http"
 import { 
     MongooseProviderInstance, 
     RedisClientProviderInstance 
-} from "../shared/providers/index"
+} from "../shared/providers"
 
 type Signal = "SIGINT" | "SIGTERM" 
 type ShutdownOptions = {

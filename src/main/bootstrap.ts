@@ -1,7 +1,7 @@
 import { 
     MongooseProviderInstance,
     RedisClientProviderInstance 
-} from "../shared/providers/index"
+} from "../shared/providers"
 
 const bootstrap = async (): Promise<void> => {
     try {

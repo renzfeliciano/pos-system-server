@@ -1,9 +1,11 @@
-export function handleError(operationName: string, error: unknown): never {
+export function handleError(context: string, error: unknown): void {
+    console.error(`${context}:`, error)
+
     if (error instanceof Error) {
-        console.error(`Error during ${operationName}:`, error.message)
+        console.error(`${context}: ${error.message}`)
+        throw new Error(`${context}: ${error.message}`)
     } else {
-        console.error(`Unknown error during ${operationName}:`, error)
+        console.error(`${context}: An unknown error occurred:`, error)
+        throw new Error(`${context}: An unknown error occurred`)
     }
-    
-    throw new Error(`Error during ${operationName}`)
 }
