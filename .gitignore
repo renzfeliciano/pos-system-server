@@ -1,2 +1,24 @@
+# Ignore environment variable files
 .env
+
+# Ignore Node.js dependencies
 node_modules/
+
+# Ignore cryptographic keys (all .pem files except .example)
+src/config/security/keys/*.pem
+!src/config/security/keys/*.pem.example
+
+# Optional: Ignore specific key file extensions globally if keys are stored outside the 'keys' directory
+# *.pem
+# !*.pem.example
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
+
+# Ignore build artifacts
+dist/
+build/
