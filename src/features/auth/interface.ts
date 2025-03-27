@@ -22,3 +22,8 @@ export interface IAuthTokenProvider {
     verifyAccessToken(token: string): IAuthPayload
     verifyRefreshToken(token: string): IAuthPayload
 }
+
+export interface ILoginPayload {
+    username: string
+    password: string
+}

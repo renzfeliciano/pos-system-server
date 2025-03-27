@@ -1,6 +1,6 @@
 import express, { Express } from "express"
 import { EnvProvider } from "../shared/providers/EnvProvider"
-import Routes from "./routes"
+import Routes from "../routes"
 
 EnvProvider.load()
 const app: Express = express()
