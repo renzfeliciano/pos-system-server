@@ -20,6 +20,7 @@ class AuthService {
 
     register = async (data: any): Promise<{ isRegistered: boolean }> => {
         try {
+            console.log(data)
             const result = {
                 isRegistered: true
             }
@@ -32,6 +33,7 @@ class AuthService {
 
     logout = async (data: any): Promise<{ isLoggedOut: boolean }> => {
         try {
+            console.log(data)
             const result = {
                 isLoggedOut: true
             }
@@ -44,6 +46,7 @@ class AuthService {
 
     refreshToken = async (data: any): Promise<{ isRefreshed: boolean }> => {
         try {
+            console.log(data)
             const result = {
                 isRefreshed: true
             }

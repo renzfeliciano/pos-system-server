@@ -1,4 +1,4 @@
-export function handleError(context: string, error: unknown): void {
+export function handleError(context: string, error: unknown): never {
     console.error(`${context}:`, error)
 
     if (error instanceof Error) {
